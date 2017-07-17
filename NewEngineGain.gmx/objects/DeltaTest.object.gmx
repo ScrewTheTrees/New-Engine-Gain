@@ -129,23 +129,18 @@ y+=5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>redIn[0] = 255;
-greenIn[0] = 0;
-blueIn[0] = 0;
+            <string>colInput1[0] = make_color_rgb(255,0,0);
 
-redIn[1] = 0;
-greenIn[1] = 0;
-blueIn[1] = 255;
+colInput1[1] = make_color_rgb(0,0,255);
 
-redOut[0] = 255;
-greenOut[0] = 0;
-blueOut[0] = 0;
 
-redOut[1] = irandom(255);
-greenOut[1] = irandom(255);
-blueOut[1] = irandom(255);
+colOutput1[0] = make_color_rgb(255,0,0);
+colOutput2[0] = make_color_rgb(100,0,0);
 
-shColorReplaceRangeExt_SetShader(redIn,greenIn,blueIn,redOut,greenOut,blueOut,2);
+colOutput1[1] = make_color_rgb(0,255,0);
+
+
+shColorReplaceRangeExt_SetShader(colInput1,colInput2,colOutput1,colOutput2,2);
 draw_self();
 
 shader_reset();

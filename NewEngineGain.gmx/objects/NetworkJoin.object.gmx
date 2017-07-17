@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>serverIP = get_string("Insert anal IP:","127.0.0.1");
+            <string>event_inherited();
+
+serverIP = get_string("Insert anal IP:","127.0.0.1");
 
 
 server = tcpconnect(serverIP,tcpPort, true);

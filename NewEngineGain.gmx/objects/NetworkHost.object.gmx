@@ -64,7 +64,7 @@ isHost = true;
             <kind>1</kind>
             <string>event_inherited();
 
-var client = tcpaccept(global.listen, true);
+var client = tcpaccept(listen, true);
 
 if client &gt; 0
 {
@@ -75,7 +75,7 @@ nextID+=1;
 
 var playerId = nextID;
 
-i = instance_create(0,0,NetworkClient);
+i = instance_create(irandom(500),irandom(500),NetworkClient);
 i.playerID = playerId;
 i.playerPort = clientPort;
 i.playerSocket = client;
