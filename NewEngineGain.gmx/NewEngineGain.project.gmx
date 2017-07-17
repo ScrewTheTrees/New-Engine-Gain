@@ -135,7 +135,8 @@
   <rooms name="rooms">
     <room>rooms\rmTemplates</room>
   </rooms>
-  <constants number="1">
+  <constants number="2">
+    <constant name="MSG_SENDPORT">1</constant>
     <constant name="MSG_DEADPACKET">0</constant>
   </constants>
   <help>

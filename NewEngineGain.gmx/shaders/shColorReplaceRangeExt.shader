@@ -18,7 +18,8 @@ void main()
     v_vTexcoord = in_TextureCoord;
 }
 
-//######################_==_YOYO_SHADER_MARKER_==_######################@~//
+//######################_==_YOYO_SHADER_MARKER_==_######################@~
+//
 //  shColorReplaceRangeExt
 //
 //      Replaces a range of colors with a second range of colors.
@@ -38,7 +39,6 @@ void main()
 //      colorTolerance  1/255 normally, greater values match colors more liberally
 //      colorPerturb    0.0 to leave output range pure, other values add color matching error
 //
-//  GMLscripts.com
 //
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
