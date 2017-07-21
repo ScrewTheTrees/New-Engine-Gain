@@ -1,4 +1,4 @@
-///Network_SendServer(isUDP?)
+///Network_SendServer(UseUdp)
 
 if argument0==true
     sendmessage(Network.udpListen,Network.serverIP,Network.udpPortHost,0)

@@ -38,7 +38,7 @@ playerRoom = room;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -58,17 +58,15 @@ playerRoom = room;
             <string>//--------********************----------
 //TCP
 //Put in ObjOtherPlayer or ObjRecivePacket
-for (var i = 0; i&lt;100; i++)
+for (var i = 0; i&lt;10; i++)
 {
   size = receivemessage(playerSocket,0,0);
   
   if size&lt;0 {i=500} //Nothing is sent
   if size==0 {instance_destroy(); exit;} //Player leaves
   
-  messageid = readbyte(0);
   
-  
-  Network_MessageSwitcher(messageid);
+  Network_MessageSwitcher();
 }
 </string>
           </argument>

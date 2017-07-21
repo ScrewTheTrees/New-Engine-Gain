@@ -45,7 +45,7 @@ isHost = true;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -81,9 +81,7 @@ i.playerPort = clientPort;
 i.playerSocket = client;
 i.playerIP = clientIp;
 
-//MsgSendPlayerid(playerId);
-
-global.tempID = playerId;
+Network_MessageSendPlayerID(playerId);
 
 }
 </string>

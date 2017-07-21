@@ -1,4 +1,7 @@
-///Network_ChangeUdp(NetworkObject, Port)
-closesocket(argument0.udpListen);
-argument0.udpListen = udpconnect(argument1,2);
-argument0.udpPort = argument1;
+///Network_ChangeUdp(Port)
+if (!Network_IsHost())
+{
+    closesocket(Network.udpListen);
+    Network.udpListen = udpconnect(argument0,2);
+    Network.udpPort = argument0;
+}
