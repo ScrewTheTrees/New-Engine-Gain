@@ -63,10 +63,8 @@ for (var i = 0; i&lt;10; i++)
   size = receivemessage(playerSocket,0,0);
   
   if size&lt;0 {i=500} //Nothing is sent
-  if size==0 {instance_destroy(); exit;} //Player leaves
-  
-  
-  Network_MessageSwitcher();
+  else if size==0 {instance_destroy(); exit;} //Player leaves
+  else Network_MessageSwitcher();
 }
 </string>
           </argument>

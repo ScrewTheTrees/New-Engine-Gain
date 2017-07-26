@@ -11,4 +11,6 @@
         
         Network_SendClient(1,playerID, true);
         clearbuffer(0);
+        
+        show_message_async("Deadpacket");
    }

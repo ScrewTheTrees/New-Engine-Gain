@@ -69,7 +69,7 @@ var client = tcpaccept(listen, true);
 if client &gt; 0
 {
 var clientIp = lastinIP();
-var clientPort = 17651;
+var clientPort = 17652;
 
 nextID+=1;
 

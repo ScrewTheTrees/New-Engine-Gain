@@ -6,5 +6,6 @@ globalvar eid;
 step_100 = 0;
 step_10 = 0;
 step_1 = 0;
+step_01 = 0;
 
 eid = 0;

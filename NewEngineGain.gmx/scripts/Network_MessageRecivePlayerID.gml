@@ -7,4 +7,5 @@
    if (!Network_IsHost())
    {
         Network.playerID = playerID;
+        Network_MessageSendPort(Network.udpPort);
    }

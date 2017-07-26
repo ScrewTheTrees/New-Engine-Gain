@@ -114,8 +114,8 @@
       <script>scripts\Network_ChangeUdp.gml</script>
       <script>scripts\Network_SendServer.gml</script>
       <script>scripts\Network_SendClient.gml</script>
-      <script>scripts\Network_IsOnline.gml</script>
       <script>scripts\Network_GetSelfPlayerID.gml</script>
+      <script>scripts\Network_IsOnline.gml</script>
       <script>scripts\Network_IsHost.gml</script>
       <script>scripts\Network_GetPlayerEntity.gml</script>
       <script>scripts\Network_MessageSwitcher.gml</script>
