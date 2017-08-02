@@ -1,6 +1,6 @@
 ///Entity_ExecuteAnimation(Entity, Sprite, Speed, Repeat, AnimationEndSprite, AnimationEndSpeed)
 //AnimationEndSprite will automatically be repeating.
-//If repeat is false that last 2 arguments are pretty irrelevant.
+//If repeat is true that last 2 arguments are pretty irrelevant.
 
 var spr, spd, rep, eobj;
 eobj = argument0;

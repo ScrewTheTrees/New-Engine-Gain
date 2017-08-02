@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>MaskPlayer</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -25,27 +25,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-team = TEAM.teamNeutral;
-projectileRoom = room;          //Room that the projectile is in.
-creatorID = -1;                 //EntityID of the creator
-creatorEntity = self;           //EntityObject of the creator
-
-damage = 0;
-
-isHeal = false;                 //If the projectile heals (and changes targeting).
-collide = true;                 //If it collides with entities.
-collideCreator = false;         //If the projectile can collide with it's creator.
-collideDestroy = true;          //If it should be destroyed on collision.
-collideIgnoreTeam = false;      //Hits everyone targetable. Always ignores Neutral regardless.
+            <string>event_inherited();
 
 
-//These are transfered from the entities.
+//Properties
+team = TEAM.teamAlly;
+
+entityHealth = 10000;
+entityMana = 10000;
+entityStamina = 10000;
+
+entityHealthMax = 10000;
+entityManaMax = 10000;
+entityStaminaMax = 10000;
+
+entityHealthRegen = 1.00;
+entityManaRegen = 1.00;
+entityStaminaRegen = 1.00;
+
 damageScaling = 1;
 abilityScaling = 1;
 
-projectileDirection = 0;        //This is set by Projectile_Create
-projectileSpeed = 0;
+//Animation / Drawing
+
+animationIdle = sprite0;
+
 </string>
           </argument>
         </arguments>

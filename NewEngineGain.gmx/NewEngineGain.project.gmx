@@ -26,6 +26,8 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\MaskPlayer</sprite>
+    <sprite>sprites\MaskSolidBlock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -142,7 +144,11 @@
       <scripts name="Getters">
         <script>scripts\Entity_GetProperty.gml</script>
       </scripts>
+      <scripts name="Step">
+        <script>scripts\Entity_StepAnimation.gml</script>
+      </scripts>
       <script>scripts\Entity_Create.gml</script>
+      <script>scripts\Entity_CreateDefinedID.gml</script>
       <script>scripts\Entity_ExecuteAnimation.gml</script>
       <script>scripts\Entity_ExecuteIframes.gml</script>
       <script>scripts\Entity_Revive.gml</script>
@@ -158,7 +164,12 @@
     <object>objects\GameController</object>
     <object>objects\DeltaTest</object>
     <object>objects\Entity</object>
+    <objects name="Entities">
+      <object>objects\EntityPlayer</object>
+    </objects>
     <object>objects\Projectile</object>
+    <object>objects\Solid</object>
+    <object>objects\SolidBlock</object>
     <objects name="Network Engine">
       <object>objects\Network</object>
       <object>objects\NetworkHost</object>
@@ -167,6 +178,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmTests</room>
     <room>rooms\rmTemplates</room>
   </rooms>
   <constants number="4">
