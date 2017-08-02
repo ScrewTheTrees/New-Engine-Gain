@@ -32,25 +32,25 @@ delta_deci = delta_time / 100000;
 delta_second = delta_time / 1000000;
 delta_10seconds = delta_time / 10000000;
 
-step_100 += delta_centi;
-step_10 += delta_deci;
+step_001 += delta_centi;
+step_01 += delta_deci;
 step_1 += delta_second;
-step_01 += delta_10seconds;
+step_10 += delta_10seconds;
 
-while (step_100 &gt;= 1)
+while (step_001 &gt;= 1)
 {
    with (all)
         event_user(0);
    
-   step_100 -= 1;
+   step_001 -= 1;
 }
 
-while (step_10 &gt;= 1)
+while (step_01 &gt;= 1)
 {
    with (all)
         event_user(1);
    
-   step_10 -= 1;
+   step_01 -= 1;
 }
 
 while (step_1 &gt;= 1)
@@ -61,12 +61,12 @@ while (step_1 &gt;= 1)
    step_1 -= 1;
 }
 
-while (step_01 &gt;= 1)
+while (step_10 &gt;= 1)
 {
    with (all)
         event_user(3);
    
-   step_01 -= 1;
+   step_10 -= 1;
 }
 </string>
           </argument>

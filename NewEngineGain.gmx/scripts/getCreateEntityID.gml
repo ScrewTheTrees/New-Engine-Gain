@@ -1,2 +1,2 @@
-eid+=1;
-return eid;
+global.eid+=1;
+return global.eid;
