@@ -52,9 +52,14 @@ entityStaminaRegen = 0.00;
 damageScaling = 1;
 abilityScaling = 1;
 
-//Varaibles that are used for logic.
+//Variables that are used for logic.
 xSpeed = 0;
 ySpeed = 0;
+
+//Animation / Drawing
+animationFrame = 0;
+animationSpeed = 0;
+animationLength = 0;
 </string>
           </argument>
         </arguments>
