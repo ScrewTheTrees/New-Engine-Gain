@@ -25,36 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>entityID = getCreateEntityID();
+            <string>//Health / Damage System
+damage = 0;
 
-//Tags
-invunerable = false;           //Wont take damage.
-invisible = false;             //Wont draw.
-canHeal = false                //Whenever it can be healed or not
-projectileCanHit = false;      //Can be hit by projectile
-dead = false;                  //For persistent objects
 
-//Health, damage and faction system.
+
+isHeal = false;         //If the projectile heals (and changes targeting).
+
+
+//These are transfered from the entities.
 team = TEAM.teamNeutral;
-
-entityHealth = 0;
-entityMana = 0;
-entityStamina = 0;
-
-entityHealthMax = 0;
-entityManaMax = 0;
-entityStaminaMax = 0;
-
-entityHealthRegen = 0.00;
-entityManaRegen = 0.00;
-entityStaminaRegen = 0.00;
-
 damageScaling = 1;
 abilityScaling = 1;
-
-//Varaibles that are used for logic.
-xSpeed = 0;
-ySpeed = 0;
 </string>
           </argument>
         </arguments>

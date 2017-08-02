@@ -130,17 +130,17 @@ y+=5;
           <argument>
             <kind>1</kind>
             <string>colInput1[0] = make_color_rgb(255,0,0);
-colInput2[0] = make_color_hsv(colour_get_hue(colInput1[0]), colour_get_saturation(colInput1[0]), colour_get_value(colInput1[0]) - 155);
+colInput2[0] = make_color_hsv(colour_get_hue(colInput1[0]), colour_get_saturation(colInput1[0]), colour_get_value(colInput1[0]) - 100);
 
 colInput1[1] = make_color_rgb(0,0,255);
-colInput2[1] = make_color_hsv(colour_get_hue(colInput1[1]), colour_get_saturation(colInput1[1]), colour_get_value(colInput1[1]) - 155);
+colInput2[1] = make_color_hsv(colour_get_hue(colInput1[1]), colour_get_saturation(colInput1[1]), colour_get_value(colInput1[1]) - 100);
 
 
 colOutput1[0] = make_color_rgb(255,0,0);
-colOutput2[0] = make_color_rgb(100,0,0);
+colOutput2[0] = make_color_rgb(155,0,0);
 
 colOutput1[1] = make_color_rgb(0,255,0);
-colOutput2[1] = make_color_rgb(0,100,0);
+colOutput2[1] = make_color_rgb(0,155,0);
 
 
 shColorReplaceRangeExt_SetShader(colInput1,colInput2,colOutput1,colOutput2,2);

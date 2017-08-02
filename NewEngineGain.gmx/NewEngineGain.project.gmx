@@ -34,6 +34,9 @@
     <script>scripts\gameStartCode.gml</script>
     <script>scripts\gameEndCode.gml</script>
     <script>scripts\getCreateEntityID.gml</script>
+    <scripts name="Enums">
+      <script>scripts\EnumTeams.gml</script>
+    </scripts>
     <scripts name="Shaders">
       <script>scripts\shColorReplaceRangeExt_SetShader.gml</script>
     </scripts>
@@ -138,6 +141,7 @@
     <object>objects\GameController</object>
     <object>objects\DeltaTest</object>
     <object>objects\Entity</object>
+    <object>objects\Projectile</object>
     <objects name="Network Engine">
       <object>objects\Network</object>
       <object>objects\NetworkHost</object>
