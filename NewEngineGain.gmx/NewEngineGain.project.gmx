@@ -146,12 +146,14 @@
       </scripts>
       <scripts name="Step">
         <script>scripts\Entity_StepAnimation.gml</script>
+        <script>scripts\Entity_StepMovementPlatformer.gml</script>
       </scripts>
       <script>scripts\Entity_Create.gml</script>
       <script>scripts\Entity_CreateDefinedID.gml</script>
       <script>scripts\Entity_ExecuteAnimation.gml</script>
       <script>scripts\Entity_ExecuteIframes.gml</script>
       <script>scripts\Entity_Revive.gml</script>
+      <script>scripts\Entity_SetInput.gml</script>
     </scripts>
     <scripts name="Projectile">
       <script>scripts\Projectile_Create.gml</script>

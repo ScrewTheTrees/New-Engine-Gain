@@ -39,7 +39,8 @@ dead = false;                  //Dead Entities generally dont do logic.
 //Logic
 healthDecay = true;            //If this tag is set health will decay
 healthDecayRate = 0.01;        //1% of extra health is decayed every 0.01 seconds.
-healthDecayMax = 100;          //Maximum amount of health that can be lost every 0.01 seconds.
+healthDecayMax = 50;          //Maximum amount of health that can be lost every 0.01 seconds.
+healthDecayMin = 1;          //Maximum amount of health that can be lost every 0.01 seconds.
 
 iframes = 0;
 
@@ -72,6 +73,12 @@ for (var i = 0; i &lt;= INPUT.keyMax; i++)
 //Movement
 xSpeed = 0;
 ySpeed = 0;
+yGravity = 0.25;
+xSpeedMax = 99;
+ySpeedMax = 12
+
+movespeed = 1;
+facedir = 1;
 
 //Animation / Drawing
 animationSprite = -1;
