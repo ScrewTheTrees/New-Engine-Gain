@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>
 team = TEAM.teamNeutral;
-creator = -1;                  //EntityID of the creator
+creatorID = -1;               //EntityID of the creator
 creatorEntity = self;         //EntityObject of the creator
 
 damage = 0;
@@ -36,7 +36,7 @@ isHeal = false;               //If the projectile heals (and changes targeting).
 collide = true;               //If it collides with entities.
 collideCreator = false;       //If the projectile can collide with it's creator.
 collideDestroy = true;        //If it should be destroyed on collision.
-collideIgnoreTeam = false;    //Always ignores Neutral regardless.
+collideIgnoreTeam = false;    //Hits everyone targetable. Always ignores Neutral regardless.
 
 
 //These are transfered from the entities.

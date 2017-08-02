@@ -7,7 +7,7 @@ enum TEAM {
 
 /*
 "Creator" is the Entity which created the projectile.
-There are booleans inside the projectiles that ruin these rules.
+There are booleans inside the projectiles that modifies these rules.
 
 (PROJECTILES)
     Neutrals dont to anything

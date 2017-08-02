@@ -26,14 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>entityID = getCreateEntityID();
-entityRoom = 0;
+entityRoom = room;             //The room this entity is residing inside
 
 //Tags
 invunerable = false;           //Wont take damage.
 invisible = false;             //Wont draw.
 canHeal = false                //Whenever it can be healed or not
-projectileCanHit = false;      //Can be hit by projectile
-dead = false;                  //For persistent objects
+projectileCollide = false;     //Can be hit by projectile
+dead = false;                  //Dead Entities generally dont do logic.
 
 //Health, damage and faction system.
 team = TEAM.teamNeutral;
@@ -60,6 +60,7 @@ for (var i = 0; i &lt;= INPUT.keyMax; i++)
     inputHold[i] = false;
     inputRelease[i] = false;
 }
+
 //Variables that are used for logic.
 xSpeed = 0;
 ySpeed = 0;
@@ -71,6 +72,7 @@ animationSpeed = 1;
 animationLength = 0;
 animationRepeat = false;
 animationEndSprite = -1;
+animationEndSpeed = 1;
 </string>
           </argument>
         </arguments>
