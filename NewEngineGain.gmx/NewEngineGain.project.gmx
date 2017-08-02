@@ -136,12 +136,16 @@
       </scripts>
     </scripts>
     <scripts name="Entity">
-      <script>scripts\Entity_Create.gml</script>
-      <script>scripts\Entity_PlayAnimation.gml</script>
       <scripts name="Setters">
-        <script>scripts\Entity_GetProperty.gml</script>
         <script>scripts\Entity_SetProperty.gml</script>
       </scripts>
+      <scripts name="Getters">
+        <script>scripts\Entity_GetProperty.gml</script>
+      </scripts>
+      <script>scripts\Entity_Create.gml</script>
+      <script>scripts\Entity_ExecuteAnimation.gml</script>
+      <script>scripts\Entity_ExecuteIframes.gml</script>
+      <script>scripts\Entity_Revive.gml</script>
     </scripts>
     <scripts name="Projectile">
       <script>scripts\Projectile_Create.gml</script>

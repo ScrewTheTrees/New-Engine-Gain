@@ -35,6 +35,14 @@ canHeal = true;                //Whenever it can be healed or not
 projectileCollide = true;      //Can be hit by projectile
 dead = false;                  //Dead Entities generally dont do logic.
 
+
+//Logic
+healthDecay = true;            //If this tag is set health will decay
+healthDecayRate = 0.01;        //1% of extra health is decayed every 0.01 seconds.
+healthDecayMax = 100;          //Maximum amount of health that can be lost every 0.01 seconds.
+
+iframes = 0;
+
 //Properties
 team = TEAM.teamNeutral;
 
@@ -53,7 +61,7 @@ entityStaminaRegen = 0.00;
 damageScaling = 1;
 abilityScaling = 1;
 
-//Movement / Input
+//Input
 for (var i = 0; i &lt;= INPUT.keyMax; i++)
 {
     inputPressed[i] = false;
@@ -61,7 +69,7 @@ for (var i = 0; i &lt;= INPUT.keyMax; i++)
     inputRelease[i] = false;
 }
 
-//Variables that are used for logic.
+//Movement
 xSpeed = 0;
 ySpeed = 0;
 
