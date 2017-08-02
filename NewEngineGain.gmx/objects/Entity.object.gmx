@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>entityID = getCreateEntityID();
+entityRoom = 0;
 
 //Tags
 invunerable = false;           //Wont take damage.
@@ -52,14 +53,24 @@ entityStaminaRegen = 0.00;
 damageScaling = 1;
 abilityScaling = 1;
 
+//Movement / Input
+for (var i = 0; i &lt;= INPUT.keyMax; i++)
+{
+    inputPressed[i] = false;
+    inputHold[i] = false;
+    inputRelease[i] = false;
+}
 //Variables that are used for logic.
 xSpeed = 0;
 ySpeed = 0;
 
 //Animation / Drawing
+animationSprite = -1;
 animationFrame = 0;
-animationSpeed = 0;
+animationSpeed = 1;
 animationLength = 0;
+animationRepeat = false;
+animationEndSprite = -1;
 </string>
           </argument>
         </arguments>

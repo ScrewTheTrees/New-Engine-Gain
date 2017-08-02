@@ -4,7 +4,7 @@ global.temp2 = argument0;
 
 with (NetworkClient)
 {
-    if (global.temp2 = playerID)
+    if (global.temp2 == playerID)
     {
         global.temp = self;
     }
