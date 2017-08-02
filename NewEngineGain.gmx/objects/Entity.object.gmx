@@ -35,7 +35,7 @@ canHeal = true;                //Whenever it can be healed or not
 projectileCollide = true;      //Can be hit by projectile
 dead = false;                  //Dead Entities generally dont do logic.
 
-//Health, damage and faction system.
+//Properties
 team = TEAM.teamNeutral;
 
 entityHealth = 0;

@@ -37,7 +37,7 @@
     <scripts name="Enums">
       <script>scripts\EnumTeams.gml</script>
       <script>scripts\EnumInput.gml</script>
-      <script>scripts\EnumProperty.gml</script>
+      <script>scripts\EnumEntityProperty.gml</script>
     </scripts>
     <scripts name="Shaders">
       <script>scripts\shColorReplaceRangeExt_SetShader.gml</script>
@@ -140,6 +140,7 @@
       <script>scripts\Entity_PlayAnimation.gml</script>
       <scripts name="Setters">
         <script>scripts\Entity_GetProperty.gml</script>
+        <script>scripts\Entity_SetProperty.gml</script>
       </scripts>
     </scripts>
     <scripts name="Projectile">
