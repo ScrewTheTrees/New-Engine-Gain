@@ -31,8 +31,8 @@ entityRoom = room;             //The room this entity is residing inside
 //Tags
 invunerable = false;           //Wont take damage.
 invisible = false;             //Wont draw.
-canHeal = false                //Whenever it can be healed or not
-projectileCollide = false;     //Can be hit by projectile
+canHeal = true;                //Whenever it can be healed or not
+projectileCollide = true;      //Can be hit by projectile
 dead = false;                  //Dead Entities generally dont do logic.
 
 //Health, damage and faction system.
