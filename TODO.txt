@@ -1,0 +1,33 @@
+Things needed done:
+<x> Core Game Engine
+<x> Core Game loop Delta
+<x> Sprite/Animation Engine
+<x> Network Engine TCP UDP
+<x> Base Entity Engine
+< > Camera Engine (Refactor)
+<x> Player Object
+<x> Controlled Player Object inherits from player object.
+<x> Collision Engine
+<x> Entity Movement
+< > Entity Syncronization
+< > Project Structure Revision
+< > Entity Health/Mana Structure
+< > Entity Faction / Team Structure
+< > Projectile Object
+< > Projectile Structure
+< > Room Tracking / Syncronization
+< > Base weapon structures
+
+
+User Event 0 = 100 times a second
+User Event 1 = 10 times a second
+User Event 2 = 1 time a second
+User Event 3 = 1 Time every 10 seconds
+	
+	
+	
+int packetType
+int playerID
+int entityID
+
+etc...	
