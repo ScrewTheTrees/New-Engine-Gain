@@ -11,10 +11,10 @@ Things needed done:
 <x> Entity Movement
 < > Entity Syncronization
 < > Project Structure Revision
-< > Entity Health/Mana Structure
-< > Entity Faction / Team Structure
-< > Projectile Object
-< > Projectile Structure
+<x> Entity Health/Mana Structure
+<x> Entity Faction / Team Structure
+<x> Projectile Object
+<x> Projectile Structure
 < > Room Tracking / Syncronization
 < > Base weapon structures
 
