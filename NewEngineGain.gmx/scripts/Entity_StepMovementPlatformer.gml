@@ -133,10 +133,6 @@ and gg = false  //We havent moved yet
 }//Hspeed
 
 
-jump = inputPressed[INPUT.keyJump];
-jumpHold = inputHold[INPUT.keyJump];
-
-
 //Holding up makes you jump higher and fall slower... moar floaty
 if (!place_meeting(x,y+1,Solid) && !place_meeting(x,y-abs(ySpeed),Solid) && jumpHold == true && ySpeed<0 && canJump == true)
    {
