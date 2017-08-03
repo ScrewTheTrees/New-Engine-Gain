@@ -116,6 +116,8 @@ while (step_10 &gt;= 1)
             <string>globalVars();
 gameStartCode();
 
+instance_create(0,0,InputController);
+
 room_goto_next();
 </string>
           </argument>

@@ -166,6 +166,7 @@
   </shaders>
   <objects name="objects">
     <object>objects\GameController</object>
+    <object>objects\InputController</object>
     <object>objects\DeltaTest</object>
     <object>objects\Entity</object>
     <objects name="Entities">
