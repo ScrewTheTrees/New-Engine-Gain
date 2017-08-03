@@ -115,6 +115,8 @@ while (step_10 &gt;= 1)
             <kind>1</kind>
             <string>globalVars();
 gameStartCode();
+
+room_goto_next();
 </string>
           </argument>
         </arguments>

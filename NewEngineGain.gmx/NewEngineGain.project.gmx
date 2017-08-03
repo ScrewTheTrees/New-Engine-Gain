@@ -28,6 +28,8 @@
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\MaskPlayer</sprite>
     <sprite>sprites\MaskSolidBlock</sprite>
+    <sprite>sprites\MaskSolidSlopeR</sprite>
+    <sprite>sprites\MaskSolidSlopeL</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -168,10 +170,13 @@
     <object>objects\Entity</object>
     <objects name="Entities">
       <object>objects\EntityPlayer</object>
+      <object>objects\EntityPlayerControlled</object>
     </objects>
     <object>objects\Projectile</object>
     <object>objects\Solid</object>
     <object>objects\SolidBlock</object>
+    <object>objects\SolidSlopeR</object>
+    <object>objects\SolidSlopeL</object>
     <objects name="Network Engine">
       <object>objects\Network</object>
       <object>objects\NetworkHost</object>
@@ -180,6 +185,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rmLoad</room>
     <room>rooms\rmTests</room>
     <room>rooms\rmTemplates</room>
   </rooms>

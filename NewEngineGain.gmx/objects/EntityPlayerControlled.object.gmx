@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
-  <parentName>Entity</parentName>
+  <parentName>EntityPlayer</parentName>
   <maskName>MaskPlayer</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -27,29 +27,9 @@
             <kind>1</kind>
             <string>event_inherited();
 
-canWallJump = false;
-
 //Properties
-team = TEAM.teamAlly;
+team = TEAM.teamPlayer;
 
-entityHealth = 10000;
-entityMana = 10000;
-entityStamina = 10000;
-
-entityHealthMax = 10000;
-entityManaMax = 10000;
-entityStaminaMax = 10000;
-
-entityHealthRegen = 1.00;
-entityManaRegen = 1.00;
-entityStaminaRegen = 1.00;
-
-damageScaling = 1;
-abilityScaling = 1;
-
-//Animation / Drawing
-
-animationIdle = sprite0;
 
 </string>
           </argument>
@@ -75,7 +55,48 @@ animationIdle = sprite0;
             <kind>1</kind>
             <string>event_inherited();
 
-Entity_StepMovementPlatformer();
+if (keyboard_check(vk_right))
+    inputHold[INPUT.keyRight] = true;
+else inputHold[INPUT.keyRight] = false;
+
+if (keyboard_check(vk_left))
+    inputHold[INPUT.keyLeft] = true;
+else inputHold[INPUT.keyLeft] = false;
+
+if (keyboard_check(vk_up))
+    inputHold[INPUT.keyUp] = true;
+else inputHold[INPUT.keyUp] = false;
+
+if (keyboard_check(vk_down))
+    inputHold[INPUT.keyDown] = true;
+else inputHold[INPUT.keyDown] = false;
+
+if (keyboard_check(ord("Z")))
+{
+    inputHold[INPUT.keyJump] = true;
+}
+else inputHold[INPUT.keyJump] = false;
+
+
+for (var i = 0; i&lt;=INPUT.keyMax; i++)
+{
+    if (inputHoldPrevious[i] == false) and (inputHold[i] = true)
+        inputPressed[i] = true
+    else inputPressed[i] = false
+    
+    if (inputHoldPrevious[i] == true) and (inputHold[i] = false)
+        inputReleased[i] = true
+    else inputReleased[i] = false
+    
+    inputHoldPrevious[i] = inputHold[i];
+}
+
+
+/*
+    inputPressed[i] = false;
+    inputHold[i] = false;
+    inputHoldPrevious[i] = false; //To identify Hold/Release
+    inputRelease[i] = false;
 </string>
           </argument>
         </arguments>

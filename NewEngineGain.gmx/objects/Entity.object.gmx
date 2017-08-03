@@ -67,18 +67,26 @@ for (var i = 0; i &lt;= INPUT.keyMax; i++)
 {
     inputPressed[i] = false;
     inputHold[i] = false;
+    inputHoldPrevious[i] = false; //To identify Hold/Release
     inputRelease[i] = false;
 }
 
 //Movement
 xSpeed = 0;
 ySpeed = 0;
-yGravity = 0.25;
+yGravity = 0.5;
 xSpeedMax = 99;
 ySpeedMax = 12
 
-movespeed = 1;
+moveSpeed = 4;
 facedir = 1;
+
+canWallJump = false;
+canJump = true;
+
+jumpSpeed = 12;
+jumpSpeedWall = 6;
+jumpSpeedWallUp = 8;
 
 //Animation / Drawing
 animationSprite = -1;
@@ -88,6 +96,8 @@ animationLength = 0;
 animationRepeat = false;
 animationEndSprite = -1;
 animationEndSpeed = 1;
+
+animationIdle = -1;
 </string>
           </argument>
         </arguments>
