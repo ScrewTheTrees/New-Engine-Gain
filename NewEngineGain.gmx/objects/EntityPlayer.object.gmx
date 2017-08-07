@@ -75,7 +75,10 @@ animationIdle = sprite0;
             <kind>1</kind>
             <string>event_inherited();
 
-Entity_StepMovementPlatformer();
+if Entity_GetFlagState(self,ENTITYFLAG.flagDead) == false
+{
+    Entity_StepMovementPlatformer();
+}
 </string>
           </argument>
         </arguments>

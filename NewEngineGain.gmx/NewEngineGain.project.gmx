@@ -42,6 +42,7 @@
       <script>scripts\EnumTeams.gml</script>
       <script>scripts\EnumInput.gml</script>
       <script>scripts\EnumEntityProperty.gml</script>
+      <script>scripts\EnumEntityFlags.gml</script>
     </scripts>
     <scripts name="Shaders">
       <script>scripts\shColorReplaceRangeExt_SetShader.gml</script>
@@ -142,9 +143,12 @@
     <scripts name="Entity">
       <scripts name="Setters">
         <script>scripts\Entity_SetProperty.gml</script>
+        <script>scripts\Entity_SetInput.gml</script>
       </scripts>
       <scripts name="Getters">
         <script>scripts\Entity_GetProperty.gml</script>
+        <script>scripts\Entity_GetTeamState.gml</script>
+        <script>scripts\Entity_GetFlagState.gml</script>
       </scripts>
       <scripts name="Step">
         <script>scripts\Entity_StepAnimation.gml</script>
@@ -155,7 +159,6 @@
       <script>scripts\Entity_ExecuteAnimation.gml</script>
       <script>scripts\Entity_ExecuteIframes.gml</script>
       <script>scripts\Entity_Revive.gml</script>
-      <script>scripts\Entity_SetInput.gml</script>
     </scripts>
     <scripts name="Projectile">
       <script>scripts\Projectile_Create.gml</script>
@@ -190,7 +193,8 @@
     <room>rooms\rmTests</room>
     <room>rooms\rmTemplates</room>
   </rooms>
-  <constants number="4">
+  <constants number="5">
+    <constant name="MSG_ENTITY_MOVEMENT">1001</constant>
     <constant name="MSG_ENTITY_CREATE">1000</constant>
     <constant name="MSG_SENDPLAYERID">2</constant>
     <constant name="MSG_SENDPORT">1</constant>

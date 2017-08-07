@@ -28,12 +28,10 @@
             <string>entityID = getCreateEntityID();
 entityRoom = room;             //The room this entity is residing inside
 
-//Tags
-invunerable = false;           //Wont take damage.
-invisible = false;             //Wont draw.
-canHeal = true;                //Whenever it can be healed or not
-projectileCollide = true;      //Can be hit by projectile
-dead = false;                  //Dead Entities generally dont do logic.
+//Flags
+flags = 0;
+
+team = TEAM.teamNeutral;
 
 
 //Logic
@@ -45,8 +43,6 @@ healthDecayMin = 1;          //Maximum amount of health that can be lost every 0
 iframes = 0;
 
 //Properties
-team = TEAM.teamNeutral;
-
 entityHealth = 0;
 entityMana = 0;
 entityStamina = 0;
