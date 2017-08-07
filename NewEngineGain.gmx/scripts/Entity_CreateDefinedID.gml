@@ -1,8 +1,8 @@
-///Entity_CreateDefinedID(Object, X, Y, Team, EntityID)
+///Entity_CreateDefinedID(Object, X, Y, EntityID)
 //Primarily used by clients so that the spawned entities get the right ID.
 var i;
 
-i = Entity_Create(argument0,argument1,argument2,argument3);
-i.entityID = argument4;
+i = instance_create(argument0,argument1,argument2);
+i.entityID = argument3;
 
 return i;

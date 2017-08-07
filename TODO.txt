@@ -9,7 +9,7 @@ Things needed done:
 <x> Controlled Player Object inherits from player object.
 <x> Collision Engine
 <x> Entity Movement
-< > Entity Syncronization
+<x> Entity Syncronization
 < > Project Structure Revision
 <x> Entity Health/Mana Structure
 <x> Entity Faction / Team Structure

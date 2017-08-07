@@ -13,6 +13,17 @@ var messageid = readint(0);
     case MSG_SENDPORT:
          Network_MessageRecivePort();
          break;
+    case MSG_ENTITY_CREATE:
+         Network_MessageReciveEntityCreate();
+         break;
+    case MSG_ENTITY_MOVEMENT:
+         Network_MessageReciveEntityMovement();
+         break;
+         
+         
+         
+         
+         
     default:
     
             break;

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>Entity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,77 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>entityID = getCreateEntityID();
-entityRoom = room;             //The room this entity is residing inside
+            <string>event_inherited();
 
 //Flags
-flags = 0;
-
-team = TEAM.teamNeutral;
-
-
-//Logic
-healthDecay = true;            //If this tag is set health will decay
-healthDecayRate = 0.01;        //1% of extra health is decayed every 0.01 seconds.
-healthDecayMax = 50;          //Maximum amount of health that can be lost every 0.01 seconds.
-healthDecayMin = 1;          //Maximum amount of health that can be lost every 0.01 seconds.
-
-iframes = 0;
-
-//Properties
-entityHealth = 0;
-entityMana = 0;
-entityStamina = 0;
-
-entityHealthMax = 0;
-entityManaMax = 0;
-entityStaminaMax = 0;
-
-entityHealthRegen = 0.00;
-entityManaRegen = 0.00;
-entityStaminaRegen = 0.00;
-
-damageScaling = 1;
-abilityScaling = 1;
-
-//Input
-for (var i = 0; i &lt;= INPUT.keyMax; i++)
-{
-    inputPressed[i] = false;
-    inputHold[i] = false;
-    inputHoldPrevious[i] = false; //To identify Hold/Release
-    inputRelease[i] = false;
-}
-
-//Movement
-xSpeed = 0;
-ySpeed = 0;
-yGravity = 0.5;
-
-facedir = 1;
-
-//Movement no sync
-canWallJump = false;
-canJump = true;
-
-moveSpeed = 4;
-xSpeedMax = 99;
-ySpeedMax = 12
-
-jumpSpeed = 12;
-jumpSpeedWall = 6;
-jumpSpeedWallUp = 8;
-
-//Animation / Drawing
-animationSprite = -1;
-animationFrame = 0;
-animationSpeed = 1;
-animationLength = 0;
-animationRepeat = false;
-animationEndSprite = -1;
-animationEndSpeed = 1;
-
-animationIdle = -1;
+flags = ENTITYFLAG.flagProjectileCantCollide;
+flags += ENTITYFLAG.flagInvisible;
+flags += ENTITYFLAG.flagDead;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Entity_CreateDefinedID(EntityDummy,x,y,entityID);
 </string>
           </argument>
         </arguments>

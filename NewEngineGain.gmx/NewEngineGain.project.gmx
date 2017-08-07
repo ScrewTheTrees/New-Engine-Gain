@@ -133,11 +133,15 @@
         <script>scripts\Network_MessageReciveDeadpacket.gml</script>
         <script>scripts\Network_MessageRecivePlayerID.gml</script>
         <script>scripts\Network_MessageRecivePort.gml</script>
+        <script>scripts\Network_MessageReciveEntityMovement.gml</script>
+        <script>scripts\Network_MessageReciveEntityCreate.gml</script>
       </scripts>
       <scripts name="MessageSend">
         <script>scripts\Network_MessageSendDeadpacket.gml</script>
         <script>scripts\Network_MessageSendPlayerID.gml</script>
         <script>scripts\Network_MessageSendPort.gml</script>
+        <script>scripts\Network_MessageSendEntityMovement.gml</script>
+        <script>scripts\Network_MessageSendEntityCreate.gml</script>
       </scripts>
     </scripts>
     <scripts name="Entity">
@@ -148,16 +152,19 @@
       <scripts name="Getters">
         <script>scripts\Entity_GetProperty.gml</script>
         <script>scripts\Entity_GetTeamState.gml</script>
+        <script>scripts\Entity_GetByID.gml</script>
         <script>scripts\Entity_GetFlagState.gml</script>
       </scripts>
       <scripts name="Step">
         <script>scripts\Entity_StepAnimation.gml</script>
         <script>scripts\Entity_StepMovementPlatformer.gml</script>
       </scripts>
-      <script>scripts\Entity_Create.gml</script>
+      <script>scripts\Entity_CreateSync.gml</script>
       <script>scripts\Entity_CreateDefinedID.gml</script>
       <script>scripts\Entity_ExecuteAnimation.gml</script>
       <script>scripts\Entity_ExecuteIframes.gml</script>
+      <script>scripts\Entity_InputIntBuild.gml</script>
+      <script>scripts\Entity_InputIntUnpack.gml</script>
       <script>scripts\Entity_Revive.gml</script>
     </scripts>
     <scripts name="Projectile">
@@ -172,6 +179,7 @@
     <object>objects\InputController</object>
     <object>objects\DeltaTest</object>
     <object>objects\Entity</object>
+    <object>objects\EntityDummy</object>
     <objects name="Entities">
       <object>objects\EntityPlayer</object>
       <object>objects\EntityPlayerControlled</object>
