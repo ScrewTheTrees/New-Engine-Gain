@@ -159,12 +159,14 @@
         <script>scripts\Entity_StepAnimation.gml</script>
         <script>scripts\Entity_StepMovementPlatformer.gml</script>
       </scripts>
+      <scripts name="NoMoreUse">
+        <script>scripts\Entity_InputIntBuild.gml</script>
+        <script>scripts\Entity_InputIntUnpack.gml</script>
+      </scripts>
       <script>scripts\Entity_CreateSync.gml</script>
       <script>scripts\Entity_CreateDefinedID.gml</script>
       <script>scripts\Entity_ExecuteAnimation.gml</script>
       <script>scripts\Entity_ExecuteIframes.gml</script>
-      <script>scripts\Entity_InputIntBuild.gml</script>
-      <script>scripts\Entity_InputIntUnpack.gml</script>
       <script>scripts\Entity_Revive.gml</script>
     </scripts>
     <scripts name="Projectile">
