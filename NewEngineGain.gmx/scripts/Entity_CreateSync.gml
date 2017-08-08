@@ -1,4 +1,4 @@
-///Entity_Create(Object, X, Y)
+///Entity_CreateSync(Object, X, Y)
 //Also sync itself to other players
 var i;
 

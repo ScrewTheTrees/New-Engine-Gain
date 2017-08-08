@@ -32,6 +32,7 @@ creatorID = -1;                 //EntityID of the creator
 creatorEntity = self;           //EntityObject of the creator
 
 damage = 0;
+duration = 1000;                //Duration is dictated in 1/100 of a second before expiration
 
 isHeal = false;                 //If the projectile heals (and changes targeting).
 collide = true;                 //If it collides with entities.
@@ -46,6 +47,38 @@ abilityScaling = 1;
 
 projectileDirection = 0;        //This is set by Projectile_Create
 projectileSpeed = 0;
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Entity">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//If they ignore collisions
+if (Entity_GetFlagState(other,ENTITYFLAG.flagProjectileCantCollide)==false)
+{
+    
+    
+    
+}
 </string>
           </argument>
         </arguments>

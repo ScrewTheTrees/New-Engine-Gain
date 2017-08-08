@@ -38,6 +38,8 @@
     <script>scripts\gameStartCode.gml</script>
     <script>scripts\gameEndCode.gml</script>
     <script>scripts\getCreateEntityID.gml</script>
+    <script>scripts\Projectile_GetCollisionAllegiance.gml</script>
+    <script>scripts\GetTeamState.gml</script>
     <scripts name="Enums">
       <script>scripts\EnumTeams.gml</script>
       <script>scripts\EnumInput.gml</script>
@@ -151,7 +153,6 @@
       </scripts>
       <scripts name="Getters">
         <script>scripts\Entity_GetProperty.gml</script>
-        <script>scripts\Entity_GetTeamState.gml</script>
         <script>scripts\Entity_GetByID.gml</script>
         <script>scripts\Entity_GetFlagState.gml</script>
       </scripts>
@@ -170,7 +171,8 @@
       <script>scripts\Entity_Revive.gml</script>
     </scripts>
     <scripts name="Projectile">
-      <script>scripts\Projectile_Create.gml</script>
+      <script>scripts\Projectile_CreateSync.gml</script>
+      <script>scripts\Projectile_CreateWithCID.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
