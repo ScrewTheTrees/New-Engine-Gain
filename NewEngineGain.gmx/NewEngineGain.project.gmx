@@ -188,6 +188,9 @@
     <objects name="Entities">
       <object>objects\EntityPlayer</object>
       <object>objects\EntityPlayerControlled</object>
+      <object>objects\EntityTestEnemy</object>
+      <object>objects\EntityTestBoss</object>
+      <object>objects\EntityTestAlly</object>
     </objects>
     <object>objects\Projectile</object>
     <object>objects\Solid</object>

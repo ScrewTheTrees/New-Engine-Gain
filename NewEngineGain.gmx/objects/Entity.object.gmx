@@ -43,17 +43,17 @@ healthDecayMin = 1;          //Maximum amount of health that can be lost every 0
 iframes = 0;
 
 //Properties
-entityHealth = 0;
-entityMana = 0;
-entityStamina = 0;
+entityHealth = 10000;
+entityMana = 10000;
+entityStamina = 10000;
 
-entityHealthMax = 0;
-entityManaMax = 0;
-entityStaminaMax = 0;
+entityHealthMax = 10000;
+entityManaMax = 10000;
+entityStaminaMax = 10000;
 
-entityHealthRegen = 0.00;
-entityManaRegen = 0.00;
-entityStaminaRegen = 0.00;
+entityHealthRegen = 1.00;
+entityManaRegen = 1.00;
+entityStaminaRegen = 1.00;
 
 damageScaling = 1;
 abilityScaling = 1;
@@ -121,7 +121,6 @@ animationIdle = -1;
             <kind>1</kind>
             <string>if queueInput == 1
 {
-    Network_MessageSendEntityMovement(self);
     queueInput = 50;
 }
 if queueInput &gt; 0
@@ -148,14 +147,16 @@ if queueInput &gt; 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>
+if (Entity_GetFlagState(self,ENTITYFLAG.flagInvisible==false))
+    draw_sprite_ext(sprite_index,image_index,x,y,facedir,image_yscale,image_angle,image_blend,image_alpha);
 
 draw_text(x-32,y-100,"EntityID: "+string(entityID));
-draw_text(x-32,y-120,"Key0: "+string(inputHold[0]));
-draw_text(x-32,y-140,"Key1: "+string(inputHold[1]));
-draw_text(x-32,y-160,"Key2: "+string(inputHold[2]));
-draw_text(x-32,y-180,"Key3: "+string(inputHold[3]));
-draw_text(x-32,y-200,"Key4: "+string(inputHold[4]));
+draw_text(x-32,y-120,"Helath: "+string(entityHealth));
+draw_text(x-32,y-140,"Mana: "+string(entityMana));
+draw_text(x-32,y-160,"Stamina: "+string(entityStamina));
+draw_text(x-32,y-180,"Team: "+string(team));
+draw_text(x-32,y-200,"Flags: "+string(flags));
 </string>
           </argument>
         </arguments>
