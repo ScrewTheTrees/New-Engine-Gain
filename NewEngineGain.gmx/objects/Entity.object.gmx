@@ -66,6 +66,7 @@ for (var i = 0; i &lt;= INPUT.keyMax; i++)
     inputHoldPrevious[i] = false; //To identify Hold/Release
     inputRelease[i] = false;
 }
+queueInput = 0; //To send input to other players
 
 //Movement
 xSpeed = 0;
@@ -96,6 +97,35 @@ animationEndSprite = -1;
 animationEndSpeed = 1;
 
 animationIdle = -1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if queueInput == 1
+{
+    Network_MessageSendEntityMovement(self);
+    queueInput = 50;
+}
+if queueInput &gt; 0
+    queueInput -= 1;
 </string>
           </argument>
         </arguments>

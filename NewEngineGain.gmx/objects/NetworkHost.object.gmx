@@ -35,7 +35,7 @@ udpListen = udpconnect(udpPortHost,2);
 if (listen &lt;= 0)
 {
   show_message("Unable to listen on port: "+string(tcpPort));
-  game_restart();
+  instance_destroy();
 }
 
 playerId = 0;
@@ -68,21 +68,41 @@ var client = tcpaccept(listen, true);
 
 if client &gt; 0
 {
-var clientIp = lastinIP();
-var clientPort = 17652;
+    var clientIp = lastinIP();
+    var clientPort = 17652;
+    
+    nextID+=1;
+    
+    var playerId = nextID;
+    
+    i = instance_create(irandom(500),irandom(500),NetworkClient);
+    i.playerID = playerId;
+    i.playerPort = clientPort;
+    i.playerSocket = client;
+    i.playerIP = clientIp;
+    
+    Network_MessageSendPlayerID(playerId);
 
-nextID+=1;
-
-var playerId = nextID;
-
-i = instance_create(irandom(500),irandom(500),NetworkClient);
-i.playerID = playerId;
-i.playerPort = clientPort;
-i.playerSocket = client;
-i.playerIP = clientIp;
-
-Network_MessageSendPlayerID(playerId);
-
+    with (EntityPlayer)
+    {
+        writeint(MSG_ENTITY_CREATE,0);
+        writeint(Network_GetSelfPlayerID(),0);
+        writeint(entityID,0);
+        writeint(room,0);
+        writebyte(persistent,0);
+        writeint(EntityPlayer,0);
+        writedouble(x,0);
+        writedouble(y,0);
+        
+        if (!Network_IsHost() &amp;&amp; Network_IsOnline())
+           Network_SendServer(false);
+        else if (Network_IsHost() &amp;&amp; Network_IsOnline())
+           Network_SendClient(1,playerId,false);
+           
+        clearbuffer(0);
+    }
+    
+    
 }
 </string>
           </argument>

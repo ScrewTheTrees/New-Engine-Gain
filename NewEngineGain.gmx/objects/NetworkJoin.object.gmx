@@ -35,13 +35,13 @@ udpListen = udpconnect(udpPort,2);
 
 if(server &lt;= 0)
 {
-  show_message("Cannot connect to server");
-  game_restart();
+    show_message("Cannot connect to server");
+    instance_destroy();
 }
 else
 {
-playerID =- 1;
-isHost = false;
+    playerID =- 1;
+    isHost = false;
 }
 </string>
           </argument>

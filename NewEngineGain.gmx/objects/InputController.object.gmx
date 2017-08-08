@@ -76,11 +76,17 @@
     for (var i = 0; i&lt;=INPUT.keyMax; i++)
     {
         if (inputHoldPrevious[i] == false) and (inputHold[i] = true)
+        {
+            queueInput = 1;
             inputPressed[i] = true
+        }
         else inputPressed[i] = false
         
         if (inputHoldPrevious[i] == true) and (inputHold[i] = false)
-            inputReleased[i] = true
+        {
+            queueInput = 1;
+            inputReleased[i] = true   
+        }
         else inputReleased[i] = false
         
         inputHoldPrevious[i] = inputHold[i];
