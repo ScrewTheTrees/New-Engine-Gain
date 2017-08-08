@@ -42,9 +42,6 @@ collideDestroy = true;          //If it should be destroyed on collision.
 collideIgnoreTeam = false;      //Hits everyone targetable. Always ignores Neutral regardless.
 
 
-//These are transfered from the entities.
-damageScaling = 1;
-abilityScaling = 1;
 
 projectileDirection = 0;        //This is set by Projectile_Create
 projectileSpeed = 0;
