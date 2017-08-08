@@ -77,15 +77,15 @@
     {
         if (inputHoldPrevious[i] == false) and (inputHold[i] = true)
         {
-            queueInput = 1;
-            inputPressed[i] = true
+            queueInput = 2;
+            inputPressed[i] = true;
         }
         else inputPressed[i] = false
         
         if (inputHoldPrevious[i] == true) and (inputHold[i] = false)
         {
-            queueInput = 1;
-            inputReleased[i] = true   
+            queueInput = 2;
+            inputReleased[i] = true;
         }
         else inputReleased[i] = false
         

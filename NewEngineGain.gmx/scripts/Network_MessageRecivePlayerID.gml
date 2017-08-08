@@ -1,5 +1,6 @@
 
    var playerID = readint(0);
+   EntityPlayerControlled.entityID = readint(0);
    
    clearbuffer(0);
    

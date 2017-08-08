@@ -10,7 +10,7 @@ Things needed done:
 <x> Collision Engine
 <x> Entity Movement
 <x> Entity Syncronization
-< > Project Structure Revision
+<x> Project Structure Revision
 <x> Entity Health/Mana Structure
 <x> Entity Faction / Team Structure
 <x> Projectile Object

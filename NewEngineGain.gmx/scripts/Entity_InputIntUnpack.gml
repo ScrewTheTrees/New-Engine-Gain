@@ -9,6 +9,7 @@ var bit = 1;
     {
         if (bit & global.temp > 0)
             inputHold[i]=true;
+        else inputHold[i]=false;
         
         bit = bit * 2;
     }
