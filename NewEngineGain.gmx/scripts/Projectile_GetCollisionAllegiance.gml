@@ -1,4 +1,4 @@
-//Projectile_GetCollisionAllegiance(Projectile, Entity)
+///Projectile_GetCollisionAllegiance(Projectile, Entity)
 //0 = No collision, 1 = Enemy, 2 = Ally, 3 = collide but no effect
 proj = argument0;
 ent = argument1;
