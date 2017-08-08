@@ -204,26 +204,26 @@
     <option_androidtv_use_test_ads>false</option_androidtv_use_test_ads>
     <option_argumenterrors>True</option_argumenterrors>
     <option_audioGroupCount>1</option_audioGroupCount>
-    <option_author></option_author>
+    <option_author>Fredrik Grimmenhag</option_author>
     <option_backimage>nil</option_backimage>
     <option_borderless>False</option_borderless>
     <option_changed>false</option_changed>
     <option_changeresolution>false</option_changeresolution>
     <option_closeesc>true</option_closeesc>
     <option_colordepth>0</option_colordepth>
-    <option_display_name>GameMaker: Studio</option_display_name>
+    <option_display_name>NewEngineGain</option_display_name>
     <option_displayerrors>True</option_displayerrors>
     <option_ecma>0</option_ecma>
     <option_facebook_app_display_name></option_facebook_app_display_name>
     <option_facebook_appid></option_facebook_appid>
     <option_facebook_enable>false</option_facebook_enable>
-    <option_fast_collision_compatibility>false</option_fast_collision_compatibility>
+    <option_fast_collision_compatibility>False</option_fast_collision_compatibility>
     <option_freeze>false</option_freeze>
     <option_frequency>0</option_frequency>
     <option_frontimage>nil</option_frontimage>
     <option_fullscreen>False</option_fullscreen>
-    <option_gameguid>{A074D0A6-2083-485E-BD5D-3F021A9B45F8}</option_gameguid>
-    <option_gameid>389258001</option_gameid>
+    <option_gameguid>{EC364065-4DDF-456E-A07E-8ACF5DA2B0FA}</option_gameguid>
+    <option_gameid>703536160</option_gameid>
     <option_haptic_effects>0</option_haptic_effects>
     <option_hasloadimage>false</option_hasloadimage>
     <option_helpkey>true</option_helpkey>
@@ -332,11 +332,11 @@
     <option_linux_scale>-1</option_linux_scale>
     <option_linux_screenkey>-1</option_linux_screenkey>
     <option_linux_short_desc>DeltaHax</option_linux_short_desc>
-    <option_linux_sizeable>0</option_linux_sizeable>
+    <option_linux_sizeable>-1</option_linux_sizeable>
     <option_linux_splash_png>Configs\Default\linux\splash.png</option_linux_splash_png>
     <option_linux_steam_app_id>0</option_linux_steam_app_id>
     <option_linux_sync>0</option_linux_sync>
-    <option_linux_texture_page>2048</option_linux_texture_page>
+    <option_linux_texture_page>8192</option_linux_texture_page>
     <option_linux_version_build>0</option_linux_version_build>
     <option_linux_version_major>1</option_linux_version_major>
     <option_linux_version_minor>0</option_linux_version_minor>
@@ -364,12 +364,12 @@
     <option_mac_screenkey>-1</option_mac_screenkey>
     <option_mac_showcursor>-1</option_mac_showcursor>
     <option_mac_signing_identity>Developer ID Application:</option_mac_signing_identity>
-    <option_mac_sizeable>0</option_mac_sizeable>
+    <option_mac_sizeable>-1</option_mac_sizeable>
     <option_mac_splash_png>Configs\Default\mac\splash.png</option_mac_splash_png>
     <option_mac_steam_app_id>0</option_mac_steam_app_id>
     <option_mac_sync>0</option_mac_sync>
     <option_mac_team_id></option_mac_team_id>
-    <option_mac_texture_page>2048</option_mac_texture_page>
+    <option_mac_texture_page>8192</option_mac_texture_page>
     <option_noborder>false</option_noborder>
     <option_nobuttons>false</option_nobuttons>
     <option_noscreensaver>true</option_noscreensaver>
@@ -468,14 +468,14 @@
     <option_use_new_audio>True</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
     <option_version>100</option_version>
-    <option_version_build>9</option_version_build>
-    <option_version_company></option_version_company>
-    <option_version_copyright></option_version_copyright>
-    <option_version_description></option_version_description>
-    <option_version_major>1</option_version_major>
-    <option_version_minor>0</option_version_minor>
-    <option_version_product></option_version_product>
-    <option_version_release>0</option_version_release>
+    <option_version_build>10</option_version_build>
+    <option_version_company>ScrewTheTrees</option_version_company>
+    <option_version_copyright>Fredrik Grimmenhag</option_version_copyright>
+    <option_version_description>Spiritual successor</option_version_description>
+    <option_version_major>0</option_version_major>
+    <option_version_minor>1</option_version_minor>
+    <option_version_product>Game</option_version_product>
+    <option_version_release>1</option_version_release>
     <option_win8_advertising_appid></option_win8_advertising_appid>
     <option_win8_advertising_enable>0</option_win8_advertising_enable>
     <option_win8_advertising_key></option_win8_advertising_key>
@@ -486,7 +486,7 @@
     <option_win8_build_version>0</option_win8_build_version>
     <option_win8_certificate_location>Windows8_TemporaryKey.pfx</option_win8_certificate_location>
     <option_win8_display_name>DeltaHax</option_win8_display_name>
-    <option_win8_internet_capable>0</option_win8_internet_capable>
+    <option_win8_internet_capable>-1</option_win8_internet_capable>
     <option_win8_interpolate>-1</option_win8_interpolate>
     <option_win8_landscape_allowed>-1</option_win8_landscape_allowed>
     <option_win8_landscape_flipped_allowed>-1</option_win8_landscape_flipped_allowed>
@@ -511,13 +511,13 @@
     <option_win8_splash_background_colour>#000000</option_win8_splash_background_colour>
     <option_win8_splash_png>Configs\Default\Windows8\splashscreen.png</option_win8_splash_png>
     <option_win8_store_logo>Configs\Default\Windows8\logos\logo50.png</option_win8_store_logo>
-    <option_win8_texture_page>1024</option_win8_texture_page>
+    <option_win8_texture_page>8192</option_win8_texture_page>
     <option_win8_wide_logo>Configs\Default\Windows8\logos\logo310.png</option_win8_wide_logo>
-    <option_winUAP_allowfullscreen>false</option_winUAP_allowfullscreen>
+    <option_winUAP_allowfullscreen>0</option_winUAP_allowfullscreen>
     <option_winUAP_build_version>0</option_winUAP_build_version>
     <option_winUAP_certificate_location>WinUWPRunner_TemporaryKey.pfx</option_winUAP_certificate_location>
     <option_winUAP_display_name>DeltaHax</option_winUAP_display_name>
-    <option_winUAP_fullscreen>false</option_winUAP_fullscreen>
+    <option_winUAP_fullscreen>0</option_winUAP_fullscreen>
     <option_winUAP_internet_capable>0</option_winUAP_internet_capable>
     <option_winUAP_interpolate>-1</option_winUAP_interpolate>
     <option_winUAP_landscape_allowed>-1</option_winUAP_landscape_allowed>
@@ -544,26 +544,26 @@
     <option_winUAP_splash_background_colour>#000000</option_winUAP_splash_background_colour>
     <option_winUAP_splash_png>Configs\Default\WindowsUAP\SplashScreen.scale-100.png</option_winUAP_splash_png>
     <option_winUAP_store_logo>Configs\Default\WindowsUAP\logos\StoreLogo.scale-100.png</option_winUAP_store_logo>
-    <option_winUAP_texture_page>1024</option_winUAP_texture_page>
+    <option_winUAP_texture_page>8192</option_winUAP_texture_page>
     <option_winUAP_wide_logo>Configs\Default\WindowsUAP\logos\WideLogo.scale-100.png</option_winUAP_wide_logo>
     <option_windowcolor>clBlack</option_windowcolor>
     <option_windows_alternate_sync_method>False</option_windows_alternate_sync_method>
-    <option_windows_build_version>0</option_windows_build_version>
-    <option_windows_company_info></option_windows_company_info>
-    <option_windows_copyright_info></option_windows_copyright_info>
+    <option_windows_build_version>10</option_windows_build_version>
+    <option_windows_company_info>ScrewTheTrees</option_windows_company_info>
+    <option_windows_copyright_info>Fredrik Grimmenhag</option_windows_copyright_info>
     <option_windows_create_textures_on_demand>False</option_windows_create_textures_on_demand>
-    <option_windows_description_info></option_windows_description_info>
+    <option_windows_description_info>Spiritual successor</option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
-    <option_windows_mainor_version>0</option_windows_mainor_version>
-    <option_windows_major_version>1</option_windows_major_version>
+    <option_windows_mainor_version>1</option_windows_mainor_version>
+    <option_windows_major_version>0</option_windows_major_version>
     <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
-    <option_windows_product_info></option_windows_product_info>
-    <option_windows_release_version>0</option_windows_release_version>
+    <option_windows_product_info>Game</option_windows_product_info>
+    <option_windows_release_version>1</option_windows_release_version>
     <option_windows_runner_finished>Configs\Default\windows\Runner_finish.bmp</option_windows_runner_finished>
     <option_windows_runner_header>Configs\Default\windows\Runner_header.bmp</option_windows_runner_header>
-    <option_windows_save_location>0</option_windows_save_location>
+    <option_windows_save_location>1</option_windows_save_location>
     <option_windows_sleep_margin>1</option_windows_sleep_margin>
     <option_windows_splash_background_colour>#000000</option_windows_splash_background_colour>
     <option_windows_splash_screen>Configs\Default\windows\splash.png</option_windows_splash_screen>
