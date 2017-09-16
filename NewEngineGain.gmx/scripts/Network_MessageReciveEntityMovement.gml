@@ -8,7 +8,7 @@ with (Entity_GetByID(readint(0)))
    xSpeed = readfloat(0);
    ySpeed = readfloat(0);
    yGravity = readfloat(0);
-   facedir = readbyte(0)
+   facedir = readbyte(0)-128;
    Entity_InputIntUnpack(self,readint(0));
    
    if (Network_IsHost())

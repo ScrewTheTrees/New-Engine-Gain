@@ -37,12 +37,11 @@
     <script>scripts\globalVars.gml</script>
     <script>scripts\gameStartCode.gml</script>
     <script>scripts\gameEndCode.gml</script>
-    <script>scripts\getCreateEntityID.gml</script>
     <script>scripts\GetTeamState.gml</script>
     <scripts name="Enums">
       <script>scripts\EnumTeams.gml</script>
       <script>scripts\EnumInput.gml</script>
-      <script>scripts\EnumEntityProperty.gml</script>
+      <script>scripts\EnumState.gml</script>
       <script>scripts\EnumEntityFlags.gml</script>
     </scripts>
     <scripts name="Shaders">
@@ -145,14 +144,20 @@
         <script>scripts\Network_MessageSendEntityCreate.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Components">
+      <script>scripts\Component_CreateID.gml</script>
+      <scripts name="ComponentState">
+        <script>scripts\ComponentState_SetState.gml</script>
+        <script>scripts\ComponentState_AddState.gml</script>
+        <script>scripts\ComponentState_GetState.gml</script>
+      </scripts>
+    </scripts>
     <scripts name="Entity">
+      <script>scripts\Entity_CreateID.gml</script>
       <scripts name="Setters">
-        <script>scripts\Entity_SetProperty.gml</script>
-        <script>scripts\Entity_AddProperty.gml</script>
         <script>scripts\Entity_SetInput.gml</script>
       </scripts>
       <scripts name="Getters">
-        <script>scripts\Entity_GetProperty.gml</script>
         <script>scripts\Entity_GetByID.gml</script>
         <script>scripts\Entity_GetFlagState.gml</script>
       </scripts>
@@ -166,7 +171,7 @@
       </scripts>
       <script>scripts\Entity_CreateSync.gml</script>
       <script>scripts\Entity_CreateDefinedID.gml</script>
-      <script>scripts\Entity_ExecuteAnimation.gml</script>
+      <script>scripts\ComponentAnimation_ExecuteAnimation.gml</script>
       <script>scripts\Entity_ExecuteIframes.gml</script>
       <script>scripts\Entity_Revive.gml</script>
     </scripts>
@@ -184,13 +189,18 @@
     <object>objects\InputController</object>
     <object>objects\DeltaTest</object>
     <object>objects\Entity</object>
-    <object>objects\EntityDummy</object>
+    <object>objects\Component</object>
     <objects name="Entities">
+      <object>objects\EntityDummy</object>
       <object>objects\EntityPlayer</object>
       <object>objects\EntityPlayerControlled</object>
       <object>objects\EntityTestEnemy</object>
       <object>objects\EntityTestBoss</object>
       <object>objects\EntityTestAlly</object>
+    </objects>
+    <objects name="Components">
+      <object>objects\ComponentState</object>
+      <object>objects\ComponentAnimation</object>
     </objects>
     <object>objects\Projectile</object>
     <object>objects\Solid</object>

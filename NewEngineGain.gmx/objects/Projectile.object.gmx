@@ -102,29 +102,6 @@ and (collide == true)
     if (collideCreator==true &amp;&amp; creatorEntity==other)
     or (collideCreator==false)
     {
-        var ally = Projectile_GetCollisionAllegiance(self,other);
-        
-        if (isHeal == false or collideIgnoreTeam==false)
-        {
-            if (ally == 1 or ally == 3) //Damage property or just collision
-            {
-                if (ally == 1)
-                {
-                    Entity_AddProperty(other, property, -damage);
-                    if (collideDestroy==true)
-                        instance_destroy();
-                }
-            }
-        }
-        else
-        {
-            if (ally == 2 or collideIgnoreTeam==false) //Heal property
-            {
-                Entity_AddProperty(other, property, damage);
-                if (collideDestroy==true)
-                        instance_destroy();
-            }
-        }
         
 
     }

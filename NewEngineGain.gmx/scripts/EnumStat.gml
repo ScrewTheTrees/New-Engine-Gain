@@ -1,4 +1,4 @@
-enum COMPONENT_PROPERTY {
+enum COMPONENT_STATE {
      propertyHealth = 1,
      propertyMana = 2,
      propertyStamina = 3,

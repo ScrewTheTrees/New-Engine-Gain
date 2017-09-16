@@ -6,3 +6,4 @@ step_1 = 0;
 step_10 = 0;
 
 global.eid = 0;
+global.componentID = 0;

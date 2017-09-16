@@ -73,7 +73,7 @@
     else inputHold[INPUT.keyJump] = false;
     
     
-    for (var i = 0; i&lt;=INPUT.keyMax; i++)
+    for (var i = 0; i&lt;=INPUT.MAX; i++)
     {
         if (inputHoldPrevious[i] == false) and (inputHold[i] = true)
         {

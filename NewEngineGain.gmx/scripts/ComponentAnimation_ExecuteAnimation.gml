@@ -1,4 +1,4 @@
-///Entity_ExecuteAnimation(Entity, Sprite, Speed, Repeat, AnimationEndSprite, AnimationEndSpeed)
+///Entity_ExecuteAnimation(ComponentAnimation, Sprite, Speed, Repeat, AnimationEndSprite, AnimationEndSpeed)
 //AnimationEndSprite will automatically be repeating.
 //If repeat is true that last 2 arguments are pretty irrelevant.
 
