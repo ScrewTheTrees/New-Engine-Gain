@@ -31,7 +31,6 @@
 flags = ENTITYFLAG.flagProjectileCantCollide;
 flags += ENTITYFLAG.flagInvisible;
 flags += ENTITYFLAG.flagDead;
-flags += ENTITYFLAG.flagCantHeal;
 </string>
           </argument>
         </arguments>

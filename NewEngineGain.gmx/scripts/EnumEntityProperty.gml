@@ -1,4 +1,5 @@
-enum COMPONENT_PROPERTY {
+enum ENTITYPROPERTY {
+     propertyTeam = 0,
      propertyHealth = 1,
      propertyMana = 2,
      propertyStamina = 3,
@@ -9,11 +10,10 @@ enum COMPONENT_PROPERTY {
      propertyManaRegen = 8,
      propertyStaminaRegen = 9,
      propertyDamageScaling = 10,
-     propertyAbilityScaling = 11,
-     MAX = 11
+     propertyAbilityScaling = 11
 }
 /*
-For getting/setting properties
+For getting/setting
 
 
 

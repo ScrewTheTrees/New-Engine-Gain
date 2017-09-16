@@ -4,7 +4,7 @@ enum INPUT {
      keyLeft = 2,
      keyRight = 3,
      keyJump = 4,
-     MAX = 31
+     keyMax = 31
 }
 /*
 keyMax should always be above 31.

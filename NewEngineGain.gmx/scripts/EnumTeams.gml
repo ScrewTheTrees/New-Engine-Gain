@@ -12,7 +12,7 @@ There are booleans inside the projectiles that modifies these rules.
 These are used for the bitfield "team"
 
 (PROJECTILES)
-    Neutrals are just aesthetic
+    Neutrals are just aesthetic (for now)
     Player can damage Enemy and heal Creator
     Enemy can damage Player and will collide with Ally (Without damage)
     Ally can collide with enemies (Without damage) and Heal Player

@@ -25,11 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>entityID = Entity_CreateID;
+            <string>entityID = getCreateEntityID();
 entityRoom = room;             //The room this entity is residing inside
-
-componentState = noone;     //State handling Health/Mana
-componentAnimation = noone; //Handling animations/drawing
 
 //Flags
 flags = 0;
@@ -37,8 +34,32 @@ flags = 0;
 team = TEAM.teamNeutral;
 
 
+//Logic
+healthDecay = true;            //If this tag is set health will decay
+healthDecayRate = 0.01;        //1% of extra health is decayed every 0.01 seconds.
+healthDecayMax = 50;          //Maximum amount of health that can be lost every 0.01 seconds.
+healthDecayMin = 1;          //Maximum amount of health that can be lost every 0.01 seconds.
+
+iframes = 0;
+
+//Properties
+entityHealth = 10000;
+entityMana = 10000;
+entityStamina = 10000;
+
+entityHealthMax = 10000;
+entityManaMax = 10000;
+entityStaminaMax = 10000;
+
+entityHealthRegen = 1.00;
+entityManaRegen = 1.00;
+entityStaminaRegen = 1.00;
+
+damageScaling = 1;
+abilityScaling = 1;
+
 //Input
-for (var i = 0; i &lt;= INPUT.MAX; i++)
+for (var i = 0; i &lt;= INPUT.keyMax; i++)
 {
     inputPressed[i] = false;
     inputHold[i] = false;
@@ -66,6 +87,16 @@ jumpSpeed = 12;
 jumpSpeedWall = 6;
 jumpSpeedWallUp = 8;
 
+//Animation / Drawing
+animationSprite = -1;
+animationFrame = 0;
+animationSpeed = 1;
+animationLength = 0;
+animationRepeat = false;
+animationEndSprite = -1;
+animationEndSpeed = 1;
+
+animationIdle = -1;
 </string>
           </argument>
         </arguments>
@@ -88,14 +119,12 @@ jumpSpeedWallUp = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if queueInput &lt;= 1
+            <string>if queueInput == 1
 {
     queueInput = 50;
-    Network_MessageSendEntityMovement(self);
 }
 if queueInput &gt; 0
     queueInput -= 1;
-
 </string>
           </argument>
         </arguments>
@@ -123,8 +152,11 @@ if (Entity_GetFlagState(self,ENTITYFLAG.flagInvisible)==false)
     draw_sprite_ext(sprite_index,image_index,x,y,facedir,image_yscale,image_angle,image_blend,image_alpha);
 
 draw_text(x-32,y-100,"EntityID: "+string(entityID));
-draw_text(x-32,y-120,"Team: "+string(team));
-draw_text(x-32,y-140,"Flags: "+string(flags));
+draw_text(x-32,y-120,"Helath: "+string(entityHealth));
+draw_text(x-32,y-140,"Mana: "+string(entityMana));
+draw_text(x-32,y-160,"Stamina: "+string(entityStamina));
+draw_text(x-32,y-180,"Team: "+string(team));
+draw_text(x-32,y-200,"Flags: "+string(flags));
 
 </string>
           </argument>

@@ -9,7 +9,7 @@ with (argument0)
     writefloat(xSpeed,0);
     writefloat(ySpeed,0);
     writefloat(yGravity,0);
-    writebyte(facedir+128,0);
+    writebyte(facedir,0);
     writeint(Entity_InputIntBuild(self),0);
     
     if (!Network_IsHost() && Network_IsOnline())

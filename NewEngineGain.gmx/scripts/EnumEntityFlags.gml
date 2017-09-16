@@ -5,5 +5,3 @@ enum ENTITYFLAG {
      flagProjectileCantCollide = 8,
      flagDead = 16
 };
-
-//Bitfield

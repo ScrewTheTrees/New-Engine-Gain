@@ -1,4 +1,4 @@
-///ComponentState_AddState(ComponentState, Enum COMPONENT_STATE, Value)
+///Entity_AddProperty(Entity, Enum ENTITYPROPERTY, Value)
 //Returns nothing
 
 var eobj = argument0;
