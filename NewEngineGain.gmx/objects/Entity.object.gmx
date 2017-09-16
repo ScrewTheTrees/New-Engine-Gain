@@ -25,13 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>entityID = getCreateEntityID();
+            <string>entityID = Entity_CreateEntityID();
 entityRoom = room;             //The room this entity is residing inside
 
 //Flags
 flags = 0;
-
-team = TEAM.teamNeutral;
+size = SIZE.sizeNormal;
 
 
 //Logic
@@ -43,20 +42,27 @@ healthDecayMin = 1;          //Maximum amount of health that can be lost every 0
 iframes = 0;
 
 //Properties
-entityHealth = 10000;
-entityMana = 10000;
-entityStamina = 10000;
+for (var i = 0; i &lt;= ENTITYSTATE.MAX; i++)
+{
+    state[i] = 0;
+}
 
-entityHealthMax = 10000;
-entityManaMax = 10000;
-entityStaminaMax = 10000;
+state[ENTITYSTATE.stateTeam] = TEAM.teamNeutral;
 
-entityHealthRegen = 1.00;
-entityManaRegen = 1.00;
-entityStaminaRegen = 1.00;
+state[ENTITYSTATE.stateHealth] = 10000;
+state[ENTITYSTATE.stateMana] = 10000;
+state[ENTITYSTATE.stateStamina] = 10000;
 
-damageScaling = 1;
-abilityScaling = 1;
+state[ENTITYSTATE.stateHealthMax] = 10000;
+state[ENTITYSTATE.stateManaMax] = 10000;
+state[ENTITYSTATE.stateStaminaMax] = 10000;
+
+state[ENTITYSTATE.stateHealthRegen] = 1.0;
+state[ENTITYSTATE.stateManaRegen] = 1.0;
+state[ENTITYSTATE.stateStaminaRegen] = 1.0;
+
+state[ENTITYSTATE.stateDamageScaling] = 1.0;
+state[ENTITYSTATE.stateAbilityScaling] = 1.0;
 
 //Input
 for (var i = 0; i &lt;= INPUT.keyMax; i++)
@@ -152,10 +158,10 @@ if (Entity_GetFlagState(self,ENTITYFLAG.flagInvisible)==false)
     draw_sprite_ext(sprite_index,image_index,x,y,facedir,image_yscale,image_angle,image_blend,image_alpha);
 
 draw_text(x-32,y-100,"EntityID: "+string(entityID));
-draw_text(x-32,y-120,"Helath: "+string(entityHealth));
-draw_text(x-32,y-140,"Mana: "+string(entityMana));
-draw_text(x-32,y-160,"Stamina: "+string(entityStamina));
-draw_text(x-32,y-180,"Team: "+string(team));
+draw_text(x-32,y-120,"Helath: "+string(state[ENTITYSTATE.stateHealth]));
+draw_text(x-32,y-140,"Mana: "+string(state[ENTITYSTATE.stateMana]));
+draw_text(x-32,y-160,"Stamina: "+string(state[ENTITYSTATE.stateStamina]));
+draw_text(x-32,y-180,"Team: "+string(state[ENTITYSTATE.stateTeam]));
 draw_text(x-32,y-200,"Flags: "+string(flags));
 
 </string>

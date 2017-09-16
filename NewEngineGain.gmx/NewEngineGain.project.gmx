@@ -37,15 +37,16 @@
     <script>scripts\globalVars.gml</script>
     <script>scripts\gameStartCode.gml</script>
     <script>scripts\gameEndCode.gml</script>
-    <script>scripts\getCreateEntityID.gml</script>
+    <script>scripts\Entity_CreateEntityID.gml</script>
     <script>scripts\GetTeamState.gml</script>
     <scripts name="Enums">
-      <script>scripts\EnumTeams.gml</script>
+      <script>scripts\EnumTeam.gml</script>
       <script>scripts\EnumInput.gml</script>
       <script>scripts\EnumEntityProperty.gml</script>
       <script>scripts\EnumEntityFlags.gml</script>
       <script>scripts\EnumWeapons.gml</script>
       <script>scripts\EnumAttack.gml</script>
+      <script>scripts\EnumSize.gml</script>
     </scripts>
     <scripts name="Shaders">
       <script>scripts\shColorReplaceRangeExt_SetShader.gml</script>

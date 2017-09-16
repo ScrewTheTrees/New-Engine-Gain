@@ -30,7 +30,7 @@
 canWallJump = true;
 
 //Properties
-team = TEAM.teamAlly;
+state[ENTITYSTATE.stateTeam] = TEAM.teamAlly;
 
 //Animation / Drawing
 

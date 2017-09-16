@@ -14,4 +14,4 @@ enum ATTACK {
      attackClaymoreArt = 15,
 };
 
-//Attacks follow thier weapon increments like (claymore is 10)
+//Attacks follow their weapon increments like (claymore is 10)

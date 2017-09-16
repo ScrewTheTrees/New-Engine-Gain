@@ -25,14 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-team = TEAM.teamNeutral;
+            <string>//States
+for (var i = 0; i &lt;= ENTITYSTATE.MAX; i++)
+{
+    state[i] = 0;
+}
+
+state[ENTITYSTATE.stateTeam] = TEAM.teamNeutral;
+
 projectileRoom = room;          //Room that the projectile is in.
 creatorID = -1;                 //EntityID of the creator
 creatorEntity = self;           //EntityObject of the creator
 
 damage = 0;
-property = ENTITYPROPERTY.propertyHealth;   //This is what property it modifies
+state = ENTITYSTATE.stateHealth;   //This is what property it modifies
 duration = 1000;                //Duration is dictated in 1/100 of a second before expiration
 
 isHeal = false;                 //If the projectile heals (and changes targeting).

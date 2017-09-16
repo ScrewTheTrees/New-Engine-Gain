@@ -28,7 +28,7 @@
             <string>event_inherited();
 
 //Properties
-team = TEAM.teamPlayer;
+state[ENTITYSTATE.stateTeam] = TEAM.teamPlayer;
 
 
 </string>
