@@ -44,6 +44,8 @@
       <script>scripts\EnumInput.gml</script>
       <script>scripts\EnumEntityProperty.gml</script>
       <script>scripts\EnumEntityFlags.gml</script>
+      <script>scripts\EnumWeapons.gml</script>
+      <script>scripts\EnumAttack.gml</script>
     </scripts>
     <scripts name="Shaders">
       <script>scripts\shColorReplaceRangeExt_SetShader.gml</script>
